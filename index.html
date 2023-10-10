@@ -10,6 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		
 	</head>
 	<body class="is-preload">
 
@@ -45,6 +48,7 @@
 							<li><a href="https://www.linkedin.com/in/hien-nguyen0727/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/hiennguyen727" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
 							<li><a href="mailto:hien.d.nguyen1997@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="./images/Hien_Software_Resume (1).pdf" class="icon solid fa-file" target="_blank"> <span class="label">Resume</span> </a>   </li>
 						</ul>
 
 				</div>
@@ -69,7 +73,86 @@
 
 						</div>
 					</section>
-
+						<!-- Highlight -->
+						<section id="dev-icons" class="five">
+							<div class="container">
+								<header>
+									<h2>Development Icons</h2>
+								</header>
+								<div class="icon-list">
+									<div class="icon-item">
+										<i class="devicon-javascript-plain colored"></i>
+										<p>Javascript</p>
+									</div>
+									<div class="icon-item">
+										<i class="devicon-html5-plain colored"></i>
+										<p>HTML</p>
+				
+									</div>
+									<div class="icon-item">
+										<i class="devicon-visualstudio-plain colored"></i>
+										<p>Visual Studio Code</p>
+				
+									</div>
+									<div class="icon-item">
+										<i class="devicon-react-original colored"></i>
+										<p>React</p>
+									</div>
+									<div class="icon-item">
+										<i class="devicon-sequelize-plain colored"></i>
+										<p>Sequelize</p>
+									</div>
+									<div class="icon-item">
+										<i class="devicon-bootstrap-plain colored"></i>
+										<p>Bootstrap</p>
+				
+									</div>
+									<div class="icon-item">
+										<i class="devicon-css3-plain-wordmark colored"></i>
+										<p>CSS</p>
+				
+									</div>
+									<div class="icon-item">
+										<i class="devicon-git-plain colored"></i>
+										<p>Git</p>
+				
+									</div>
+									<div class="icon-item">
+				
+										<i class="devicon-nodejs-plain colored"></i>
+										<p>Node.js</p>
+				
+									</div>
+									<div class="icon-item">
+										<i class="devicon-postgresql-plain colored"></i>
+										<p>ElephantSQL</p>
+				
+									</div>
+									<div class="icon-item">
+										<i class="devicon-express-original colored"></i>
+										<p>Express</p>
+				
+									</div>
+									<div class="icon-item">
+										<i class="devicon-sqlite-plain colored"></i>
+										<p>SQLite</p>
+									</div>
+									<div class="icon-item">
+										<i class="devicon-github-original colored"></i>
+										<p>GitHub</p>
+									</div>
+									<div class="icon-item">
+										<i class="devicon-jira-plain colored"></i>
+										<p>Jira</p>
+									</div>
+									<div class="icon-item">
+										<i class="devicon-npm-original-wordmark colored"></i>
+										<p>NPM</p>
+									</div>
+									<!-- Add more icons and labels as needed -->
+								</div>
+							</div>
+						</section>
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<div class="container">
@@ -162,7 +245,8 @@
 
 							<p>Welcome to the Contact Page of my coding portfolio! Thank you for taking the time to explore my work. If you have any questions, opportunities, or would like to discuss potential collaborations, please don't hesitate to reach out using the contact information below. Your feedback and inquiries are important to me, and I'm eager to connect with prospective employers and discuss how my skills and experience can contribute to your team.</p>
 
-							<form method="post" action="#">
+							<form  id="contact-form" method="post" action="https://formspree.io/f/xgejrwrd">
+								
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
@@ -198,6 +282,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://formspree.io/js/formbutton-v1.min.js" type="text/javascript" defer></script>
+			<script>
+			  formbutton(
+				document.getElementById("contact-form"),
+				{
+				  action: "https://formspree.io/f/xgejrwrd",
+				  method: "POST",
+				  errorTimeout: 5000,
+				  errorMessage: "An error occurred, please try again later.",
+				  successMessage: "Thanks for reaching out! I'll get back to you soon.",
+				}
+			  );
+			</script>
 	</body>
 </html>
